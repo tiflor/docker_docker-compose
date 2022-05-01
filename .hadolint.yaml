@@ -1,3 +1,2 @@
-override:
-  info:
-    - DL3018
+ignored:
+  - DL3018
