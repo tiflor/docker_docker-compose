@@ -23,8 +23,22 @@ env:
 
 
 jobs:
-  build:
+  lint:
+    name: Lint
+    runs-on: ubuntu-latest
+    #permissions:
+    #  contents: read
+    steps:
+    - name: Checkout repository
+      uses: actions/checkout@v3
 
+    - name: linting dockerfile
+      uses: hadolint/hadolint-action@v2.0.0
+      with:
+        dockerfile: Dockerfile
+
+  build:
+    name: build
     runs-on: ubuntu-latest
     permissions:
       contents: read
