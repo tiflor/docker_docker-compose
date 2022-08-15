@@ -1,4 +1,4 @@
-FROM docker:latest@sha256:7ca2205ea1eb9621045461f3e4b2aa4fc65c1ffe91960b1ab62d2afa9905e032
+FROM docker:latest@sha256:0c4066e2407fb67b5cb609aa2ea380cdd774445e6be1cd651096167963125af5
 
 LABEL org.opencontainers.image.source https://github.com/tiflor/docker_docker-compose
 
